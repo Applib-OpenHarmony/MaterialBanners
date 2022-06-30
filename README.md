@@ -47,6 +47,8 @@ MaterialBanner({
   buttonAction1: this.BannerFunc  
 })
 ```
+![1bBanner](https://user-images.githubusercontent.com/68344077/176609797-4cf50c27-db92-411e-984c-6a1b3e266853.png)
+
 
 ### Two Button Banner
 
@@ -75,6 +77,8 @@ MaterialBanner({
   buttonAction2: this.BannerFunc2  
 })
 ```
+![2bBanner](https://user-images.githubusercontent.com/68344077/176609892-c9481964-d947-4c12-ade1-2f07cb0582f1.png)
+
 
 ### Image with Two Button Banner
 
@@ -104,6 +108,7 @@ MaterialBanner({
   buttonAction2: this.BannerFunc4  
 })
 ```
+![ImgBanner](https://user-images.githubusercontent.com/68344077/176609942-6dd873ed-5851-47a8-9131-71bd30b69a33.png)
 
 
 ## [](https://github.com/Applib-OpenHarmony/MaterialBanners#compatibility)Compatibility
