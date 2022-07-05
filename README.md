@@ -113,7 +113,7 @@ MaterialBanner({
 
 ## [](https://github.com/Applib-OpenHarmony/MaterialBanners#compatibility)Compatibility
 
-Supports OpenHarmony API version 8
+Supports OpenHarmony API version 9
 
 
 ## [](https://github.com/Applib-OpenHarmony/MaterialBanners#reference)Reference:

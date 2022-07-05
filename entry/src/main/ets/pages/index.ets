@@ -30,21 +30,21 @@ struct Index {
     this.bannerModel1.setBannerMessage("Your Device is Offline");
     this.bannerModel1.setButtonText1("Turn on WiFi")
     this.bannerModel1.setButtonColor("#317AFF")
-    this.bannerModel1.setTextSize('20fp')
+    this.bannerModel1.setTextSize('18fp')
     this.bannerModel1.setTextStyle('calibri')
 
     this.bannerModel2.setBannerMessage("Your password was updated on your other device. Please sign in again");
     this.bannerModel2.setButtonText1("Continue as Guest")
     this.bannerModel2.setButtonText2("Sign in")
     this.bannerModel2.setButtonColor("#317AFF")
-    this.bannerModel2.setTextSize('16fp')
+    this.bannerModel2.setTextSize('18fp')
     this.bannerModel2.setTextStyle('calibri')
 
     this.bannerModel3.setBannerMessage("Your internet connection was lost. We can't upload your photo");
     this.bannerModel3.setButtonText1("Learn More")
     this.bannerModel3.setButtonText2("Fix it")
     this.bannerModel3.setButtonColor("#317AFF")
-    this.bannerModel3.setTextSize('16fp')
+    this.bannerModel3.setTextSize('18fp')
     this.bannerModel3.setTextStyle('calibri')
     this.bannerModel3.setImage(this.image)
   }
