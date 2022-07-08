@@ -18,8 +18,8 @@ import {BannerModel,BannerType} from './BannerModel'
 @Component
 export struct MaterialBanner{
   @State bModel:BannerModel=new BannerModel(BannerType.OneButton);
-  buttonAction1:()=>void;
-  buttonAction2:()=>void;
+  button1Function:()=>void;
+  button2Function:()=>void;
 
   build(){
     Column(){
@@ -31,7 +31,9 @@ export struct MaterialBanner{
             Button(this.bModel.getButtonText1(), { type: ButtonType.Normal, stateEffect: true }).borderRadius('8vp')
               .backgroundColor(this.bModel.getButtonColor())
               .onClick(()=>{
-                this.buttonAction1()
+                if(this.button1Function!=null && this.button1Function!=undefined) {
+                  this.button1Function()
+                }
                 this.bModel.setShow(Visibility.None)
               })
           }.width('360vp').height('54vp')
@@ -46,13 +48,17 @@ export struct MaterialBanner{
             Button(this.bModel.getButtonText2(), { type: ButtonType.Normal, stateEffect: true }).borderRadius('5vp')
               .backgroundColor(this.bModel.getButtonColor())
               .onClick((event: ClickEvent) => {
-                this.buttonAction2()
+                if(this.button2Function!=null && this.button2Function!=undefined) {
+                  this.button2Function()
+                }
                 this.bModel.setShow(Visibility.None)
               })
             Button(this.bModel.getButtonText1(), { type: ButtonType.Normal, stateEffect: true }).borderRadius('5vp')
               .backgroundColor(this.bModel.getButtonColor())
               .onClick((event: ClickEvent) => {
-                this.buttonAction1()
+                if(this.button1Function!=null && this.button1Function!=undefined) {
+                  this.button1Function()
+                }
                 this.bModel.setShow(Visibility.None)
               })
           }
@@ -75,13 +81,17 @@ export struct MaterialBanner{
             Button(this.bModel.getButtonText2(), { type: ButtonType.Normal, stateEffect: true }).borderRadius('5vp')
               .backgroundColor(this.bModel.getButtonColor())
               .onClick((event: ClickEvent) => {
-                this.buttonAction2()
+                if(this.button2Function!=null && this.button2Function!=undefined) {
+                  this.button2Function()
+                }
                 this.bModel.setShow(Visibility.None)
               })
             Button(this.bModel.getButtonText1(), { type: ButtonType.Normal, stateEffect: true }).borderRadius('5vp')
               .backgroundColor(this.bModel.getButtonColor())
               .onClick((event: ClickEvent) => {
-                this.buttonAction1()
+                if(this.button1Function!=null && this.button2Function!=undefined) {
+                  this.button1Function()
+                }
                 this.bModel.setShow(Visibility.None)
               })
           }

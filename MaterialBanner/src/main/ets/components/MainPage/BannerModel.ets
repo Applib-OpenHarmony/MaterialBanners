@@ -66,53 +66,67 @@ export class BannerModel{
     if(value==null || value==undefined){
       console.log("Button color not set. Default value used")
     }
-    this.buttonColor=value
-    return this
+    else {
+      this.buttonColor = value
+      return this
+    }
   }
   setTextSize(tc:string):BannerModel{
     if(tc==null || tc==undefined){
       console.log("Text size not set. Default value used")
     }
-    this.textSize=tc
-    return this
+    else {
+      this.textSize = tc
+      return this
+    }
   }
   setTextStyle(ts:string):BannerModel{
     if(ts==null || ts==undefined){
       console.log("Text style not set. Default value used")
     }
-    this.textStyle=ts
-    return this
+    else {
+      this.textStyle = ts
+      return this
+    }
   }
   setBannerMessage(s:string):BannerModel{
     if(s==null || s==undefined){
       console.log("Banner Message not set")
     }
-    this.bannerMessage=s
-    return this
+    else {
+      this.bannerMessage = s
+      return this
+    }
   }
   setButtonText1(a1:string):BannerModel{
     if(a1==null || a1==undefined){
       console.log("Button Text 1 not set")
     }
-    this.buttonText1=a1
-    return this
+    else {
+      this.buttonText1 = a1
+      return this
+    }
   }
   setButtonText2(a2:string):BannerModel{
     if(this.bannerType==BannerType.TwoButton && (a2==null || a2==undefined)){
       console.log("Button Text 2 not set")
     }
-    if(this.bannerType==BannerType.ImageButton && (a2==null || a2==undefined)){
+    else if(this.bannerType==BannerType.ImageButton && (a2==null || a2==undefined)){
       console.log("Button Text 2 not set")
     }
-    this.buttonText2=a2
-    return this
+    else {
+      this.buttonText2 = a2
+      return this
+    }
   }
   setImage(img:Resource):BannerModel{
     if(this.bannerType==BannerType.ImageButton && (img==null || img==undefined)){
       console.log("Image not selected")
     }
-    this.image=img
-    return this
+    else {
+      this.image = img
+      return this
+    }
   }
   setShow(value: Visibility): BannerModel{
     this.show = value

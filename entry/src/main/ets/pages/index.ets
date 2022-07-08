@@ -71,21 +71,21 @@ struct Index {
         if (this.display1) {
           MaterialBanner({
             bModel: this.bannerModel1,
-            buttonAction1: this.BannerFunc
+            button1Function: this.BannerFunc
           })
         }
         if (this.display2) {
           MaterialBanner({
             bModel: this.bannerModel2,
-            buttonAction1: this.BannerFunc1,
-            buttonAction2: this.BannerFunc2
+            button1Function: this.BannerFunc1,
+            button2Function: this.BannerFunc2
           })
         }
         if (this.display3) {
           MaterialBanner({
             bModel: this.bannerModel3,
-            buttonAction1: this.BannerFunc3,
-            buttonAction2: this.BannerFunc4
+            button1Function: this.BannerFunc3,
+            button2Function: this.BannerFunc4
           })
         }
       }.width('100%')
