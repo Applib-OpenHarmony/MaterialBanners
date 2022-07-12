@@ -14,4 +14,5 @@
  */
 
 export { MaterialBanner } from './src/main/ets/components/MainPage/MainPage'
-export {BannerModel,BannerType} from './src/main/ets/components/MainPage/BannerModel'
+
+export { BannerModel, BannerType } from './src/main/ets/components/MainPage/BannerModel'

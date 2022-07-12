@@ -13,57 +13,64 @@
  * limitations under the License.
  */
 
-export enum BannerType{
+export enum BannerType {
   OneButton,
   TwoButton,
   ImageButton
 }
 
-export class BannerModel{
-  private bannerType:BannerType;
-  private bannerMessage:string;
-  private buttonText1:string;
-  private buttonText2:string;
-  private buttonColor:string|ResourceColor="#317AFF";
-  private textSize:string='20fp';
-  private textStyle:string="calibri";
-  private show:Visibility=Visibility.Visible;
-  private image:Resource;
-
-  constructor(value:BannerType){
-    this.bannerType=value
+export class BannerModel {
+  private bannerType: BannerType;
+  private bannerMessage: string;
+  private buttonText1: string;
+  private buttonText2: string;
+  private buttonColor: string | ResourceColor= "#317AFF";
+  private textSize: string= '20fp';
+  private textStyle: string= "calibri";
+  private show: Visibility= Visibility.Visible;
+  private image: Resource;
+  constructor(value: BannerType) {
+    this.bannerType = value
   }
 
   getBannerType(): BannerType{
     return this.bannerType
   }
-  getButtonColor():string|ResourceColor{
+
+  getButtonColor(): string | ResourceColor{
     return this.buttonColor
   }
-  getTextSize():string{
+
+  getTextSize(): string{
     return this.textSize
   }
-  getTextStyle():string{
+
+  getTextStyle(): string{
     return this.textStyle
   }
-  getBannerMessage():string{
+
+  getBannerMessage(): string{
     return this.bannerMessage
   }
-  getButtonText1():string{
+
+  getButtonText1(): string{
     return this.buttonText1
   }
-  getButtonText2():string{
+
+  getButtonText2(): string{
     return this.buttonText2
   }
+
   getShow(): Visibility{
     return this.show
   }
-  getImage():Resource{
+
+  getImage(): Resource{
     return this.image
   }
 
-  setButtonColor(value:string|ResourceColor):BannerModel{
-    if(value==null || value==undefined){
+  setButtonColor(value: string | ResourceColor): BannerModel{
+    if (value == null || value == undefined) {
       console.log("Button color not set. Default value used")
     }
     else {
@@ -71,8 +78,9 @@ export class BannerModel{
     }
     return this
   }
-  setTextSize(tc:string):BannerModel{
-    if(tc==null || tc==undefined){
+
+  setTextSize(tc: string): BannerModel{
+    if (tc == null || tc == undefined) {
       console.log("Text size not set. Default value used")
     }
     else {
@@ -80,8 +88,9 @@ export class BannerModel{
     }
     return this
   }
-  setTextStyle(ts:string):BannerModel{
-    if(ts==null || ts==undefined){
+
+  setTextStyle(ts: string): BannerModel{
+    if (ts == null || ts == undefined) {
       console.log("Text style not set. Default value used")
     }
     else {
@@ -89,8 +98,9 @@ export class BannerModel{
     }
     return this
   }
-  setBannerMessage(s:string):BannerModel{
-    if(s==null || s==undefined){
+
+  setBannerMessage(s: string): BannerModel{
+    if (s == null || s == undefined) {
       console.log("Banner Message not set")
     }
     else {
@@ -98,8 +108,9 @@ export class BannerModel{
     }
     return this
   }
-  setButtonText1(a1:string):BannerModel{
-    if(a1==null || a1==undefined){
+
+  setButtonText1(a1: string): BannerModel{
+    if (a1 == null || a1 == undefined) {
       console.log("Button Text 1 not set")
     }
     else {
@@ -107,11 +118,12 @@ export class BannerModel{
     }
     return this
   }
-  setButtonText2(a2:string):BannerModel{
-    if(this.bannerType==BannerType.TwoButton && (a2==null || a2==undefined)){
+
+  setButtonText2(a2: string): BannerModel{
+    if (this.bannerType == BannerType.TwoButton && (a2 == null || a2 == undefined)) {
       console.log("Button Text 2 not set")
     }
-    else if(this.bannerType==BannerType.ImageButton && (a2==null || a2==undefined)){
+    else if (this.bannerType == BannerType.ImageButton && (a2 == null || a2 == undefined)) {
       console.log("Button Text 2 not set")
     }
     else {
@@ -119,8 +131,9 @@ export class BannerModel{
     }
     return this
   }
-  setImage(img:Resource):BannerModel{
-    if(this.bannerType==BannerType.ImageButton && (img==null || img==undefined)){
+
+  setImage(img: Resource): BannerModel{
+    if (this.bannerType == BannerType.ImageButton && (img == null || img == undefined)) {
       console.log("Image not selected")
     }
     else {
@@ -128,6 +141,7 @@ export class BannerModel{
     }
     return this
   }
+
   setShow(value: Visibility): BannerModel{
     this.show = value
     return this

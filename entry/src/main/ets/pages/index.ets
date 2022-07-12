@@ -13,20 +13,20 @@
  * limitations under the License.
  */
 
-import {MaterialBanner,BannerType,BannerModel} from '@ohos/material-banner'
+import { MaterialBanner, BannerType, BannerModel } from '@ohos/material-banner'
 
 @Entry
 @Component
 struct Index {
-  @State image:Resource=$r('app.media.noc')
+  @State image: Resource= $r('app.media.noc')
   @State display1: boolean = false
   @State display2: boolean = false
   @State display3: boolean = false
-  private bannerModel1:BannerModel=new BannerModel(BannerType.OneButton)
-  private bannerModel2:BannerModel=new BannerModel(BannerType.TwoButton)
-  private bannerModel3:BannerModel=new BannerModel(BannerType.ImageButton)
+  private bannerModel1: BannerModel= new BannerModel(BannerType.OneButton)
+  private bannerModel2: BannerModel= new BannerModel(BannerType.TwoButton)
+  private bannerModel3: BannerModel= new BannerModel(BannerType.ImageButton)
 
-  aboutToAppear(){
+  aboutToAppear() {
     this.bannerModel1.setBannerMessage("Your Device is Offline");
     this.bannerModel1.setButtonText1("Turn on WiFi")
     this.bannerModel1.setButtonColor("#317AFF")
@@ -49,25 +49,25 @@ struct Index {
     this.bannerModel3.setImage(this.image)
   }
 
-  BannerFunc:()=>void=function(){
+  BannerFunc: () => void= function () {
     console.log("WiFi turned On")
   }
-  BannerFunc1:()=>void=function(){
+  BannerFunc1: () => void= function () {
     console.log("Logged in as Guest")
   }
-  BannerFunc2:()=>void=function(){
+  BannerFunc2: () => void= function () {
     console.log("Sign in details")
   }
-  BannerFunc3:()=>void=function(){
+  BannerFunc3: () => void= function () {
     console.log("Learn More")
   }
-  BannerFunc4:()=>void=function(){
+  BannerFunc4: () => void= function () {
     console.log("Fix it")
   }
 
   build() {
     Stack({ alignContent: Alignment.Bottom }) {
-      Column(){
+      Column() {
         if (this.display1) {
           MaterialBanner({
             bModel: this.bannerModel1,
@@ -90,32 +90,35 @@ struct Index {
         }
       }.width('100%')
       .height('100%')
-      .margin({top:20})
+      .margin({ top: 20 })
       .align(Alignment.Top)
-      Column(){
+
+      Column() {
         Button({ type: ButtonType.Normal, stateEffect: true }) {
           Text("One Button Banner").fontColor(Color.Black).fontSize('25fp').padding('7vp')
         }.backgroundColor("#11BB66").margin('10vp')
         .onClick(() => {
-          this.display1=true
-          this.display2=false
-          this.display3=false
+          this.display1 = true
+          this.display2 = false
+          this.display3 = false
         })
+
         Button({ type: ButtonType.Normal, stateEffect: true }) {
           Text("Two Button Banner").fontColor(Color.Black).fontSize('25fp').padding('7vp')
         }.backgroundColor("#11BB66").margin('10vp')
         .onClick(() => {
-          this.display2=true
-          this.display1=false
-          this.display3=false
+          this.display2 = true
+          this.display1 = false
+          this.display3 = false
         })
+
         Button({ type: ButtonType.Normal, stateEffect: true }) {
           Text("Image Banner").fontColor(Color.Black).fontSize('25fp').padding('7vp')
         }.backgroundColor("#11BB66").margin('10vp')
         .onClick(() => {
-          this.display3=true
-          this.display1=false
-          this.display2=false
+          this.display3 = true
+          this.display1 = false
+          this.display2 = false
         })
       }.width('70%')
       .height('30%')
