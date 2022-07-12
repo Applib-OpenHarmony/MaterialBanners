@@ -68,8 +68,8 @@ export class BannerModel{
     }
     else {
       this.buttonColor = value
-      return this
     }
+    return this
   }
   setTextSize(tc:string):BannerModel{
     if(tc==null || tc==undefined){
@@ -77,8 +77,8 @@ export class BannerModel{
     }
     else {
       this.textSize = tc
-      return this
     }
+    return this
   }
   setTextStyle(ts:string):BannerModel{
     if(ts==null || ts==undefined){
@@ -86,8 +86,8 @@ export class BannerModel{
     }
     else {
       this.textStyle = ts
-      return this
     }
+    return this
   }
   setBannerMessage(s:string):BannerModel{
     if(s==null || s==undefined){
@@ -95,8 +95,8 @@ export class BannerModel{
     }
     else {
       this.bannerMessage = s
-      return this
     }
+    return this
   }
   setButtonText1(a1:string):BannerModel{
     if(a1==null || a1==undefined){
@@ -104,8 +104,8 @@ export class BannerModel{
     }
     else {
       this.buttonText1 = a1
-      return this
     }
+    return this
   }
   setButtonText2(a2:string):BannerModel{
     if(this.bannerType==BannerType.TwoButton && (a2==null || a2==undefined)){
@@ -116,8 +116,8 @@ export class BannerModel{
     }
     else {
       this.buttonText2 = a2
-      return this
     }
+    return this
   }
   setImage(img:Resource):BannerModel{
     if(this.bannerType==BannerType.ImageButton && (img==null || img==undefined)){
@@ -125,8 +125,8 @@ export class BannerModel{
     }
     else {
       this.image = img
-      return this
     }
+    return this
   }
   setShow(value: Visibility): BannerModel{
     this.show = value
