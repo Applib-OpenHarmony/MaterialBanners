@@ -11,6 +11,134 @@
     {
       "name": "MainAbility_label",
       "value": "label"
+    },
+    {
+      "name": "mtext1_chinese",
+      "value": "您的设备离线"
+    },
+    {
+      "name": "btext1_chinese",
+      "value": "打开无线网络"
+    },
+    {
+      "name": "mtext2_chinese",
+      "value": "您的密码已在您的其他设备上更新。请重新登录"
+    },
+    {
+      "name": "btext2_chinese",
+      "value": "以访客继续"
+    },
+    {
+      "name": "btext3_chinese",
+      "value": "登入"
+    },
+    {
+      "name": "mtext3_chinese",
+      "value": "您的互联网连接已丢失。我们无法上传您的照片"
+    },
+    {
+      "name": "btext4_chinese",
+      "value": "学到更多"
+    },
+    {
+      "name": "btext5_chinese",
+      "value": "修理它"
+    },
+    {
+      "name": "f1_chinese",
+      "value": "无线保真开启"
+    },
+    {
+      "name": "f2_chinese",
+      "value": "以访客身份登录"
+    },
+    {
+      "name": "f3_chinese",
+      "value": "登录详情"
+    },
+    {
+      "name": "f4_chinese",
+      "value": "学到更多"
+    },
+    {
+      "name": "f5_chinese",
+      "value": "修理它"
+    },
+    {
+      "name": "b1_chinese",
+      "value": "一键横幅"
+    },
+    {
+      "name": "b2_chinese",
+      "value": "两个按钮横幅"
+    },
+    {
+      "name": "b3_chinese",
+      "value": "图片横幅"
+    },
+    {
+      "name": "mtext1",
+      "value": "Your Device is Offline"
+    },
+    {
+      "name": "btext1",
+      "value": "Turn on WiFi"
+    },
+    {
+      "name": "mtext2",
+      "value": "Your password was updated on your other device. Please sign in again"
+    },
+    {
+      "name": "btext2",
+      "value": "Continue as Guest"
+    },
+    {
+      "name": "btext3",
+      "value": "Sign in"
+    },
+    {
+      "name": "mtext3",
+      "value": "Your internet connection was lost. We can't upload your photo"
+    },
+    {
+      "name": "btext4",
+      "value": "Learn More"
+    },
+    {
+      "name": "btext5",
+      "value": "Fix it"
+    },
+    {
+      "name": "f1",
+      "value": "WiFi turned On"
+    },
+    {
+      "name": "f2",
+      "value": "Logged in as Guest"
+    },
+    {
+      "name": "f3",
+      "value": "Sign in details"
+    },
+    {
+      "name": "f4",
+      "value": "Learn More"
+    },
+    {
+      "name": "f5",
+      "value": "Fix it"
+    },
+    {
+      "name": "b1",
+      "value": "One Button Banner"
+    },
+    {
+      "name": "b2",
+      "value": "Two Button Banner"
+    },
+    {
+      "name": "b3",
+      "value": "Image Banner"
     }
   ]
 }

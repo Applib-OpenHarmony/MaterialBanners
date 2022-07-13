@@ -21,9 +21,9 @@ export enum BannerType {
 
 export class BannerModel {
   private bannerType: BannerType;
-  private bannerMessage: string;
-  private buttonText1: string;
-  private buttonText2: string;
+  private bannerMessage: string | Resource;
+  private buttonText1: string | Resource;
+  private buttonText2: string | Resource;
   private buttonColor: string | ResourceColor= "#317AFF";
   private textSize: string= '20fp';
   private textStyle: string= "calibri";
@@ -49,15 +49,15 @@ export class BannerModel {
     return this.textStyle
   }
 
-  getBannerMessage(): string{
+  getBannerMessage(): string | Resource{
     return this.bannerMessage
   }
 
-  getButtonText1(): string{
+  getButtonText1(): string | Resource{
     return this.buttonText1
   }
 
-  getButtonText2(): string{
+  getButtonText2(): string | Resource{
     return this.buttonText2
   }
 
@@ -99,7 +99,7 @@ export class BannerModel {
     return this
   }
 
-  setBannerMessage(s: string): BannerModel{
+  setBannerMessage(s: string | Resource): BannerModel{
     if (s == null || s == undefined) {
       console.log("Banner Message not set")
     }
@@ -109,7 +109,7 @@ export class BannerModel {
     return this
   }
 
-  setButtonText1(a1: string): BannerModel{
+  setButtonText1(a1: string | Resource): BannerModel{
     if (a1 == null || a1 == undefined) {
       console.log("Button Text 1 not set")
     }
@@ -119,7 +119,7 @@ export class BannerModel {
     return this
   }
 
-  setButtonText2(a2: string): BannerModel{
+  setButtonText2(a2: string | Resource): BannerModel{
     if (this.bannerType == BannerType.TwoButton && (a2 == null || a2 == undefined)) {
       console.log("Button Text 2 not set")
     }
