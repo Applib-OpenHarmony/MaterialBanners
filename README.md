@@ -1,5 +1,8 @@
 # Material Banner
 
+![bannerdemo](https://user-images.githubusercontent.com/68344077/178935423-7794f6ac-8d08-413b-8f8b-dce52e5aa095.gif)
+
+
 Material Banner design in OpenHarmony.
 
 ## [](https://github.com/Applib-OpenHarmony/MaterialBanners#download--install)Download & Install
