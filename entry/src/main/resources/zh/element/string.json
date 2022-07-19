@@ -1,0 +1,80 @@
+{
+  "string": [
+    {
+      "name": "entry_desc",
+      "value": "描述"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "描述"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "标签"
+    },
+    {
+      "name": "mtext1",
+      "value": "您的设备离线"
+    },
+    {
+      "name": "btext1",
+      "value": "打开无线网络"
+    },
+    {
+      "name": "mtext2",
+      "value": "您的密码已在您的其他设备上更新。请重新登录"
+    },
+    {
+      "name": "btext2",
+      "value": "以访客继续"
+    },
+    {
+      "name": "btext3",
+      "value": "登入"
+    },
+    {
+      "name": "mtext3",
+      "value": "您的互联网连接已丢失。我们无法上传您的照片"
+    },
+    {
+      "name": "btext4",
+      "value": "学到更多"
+    },
+    {
+      "name": "btext5",
+      "value": "修理它"
+    },
+    {
+      "name": "f1",
+      "value": "无线保真开启"
+    },
+    {
+      "name": "f2",
+      "value": "以访客身份登录"
+    },
+    {
+      "name": "f3",
+      "value": "登录详情"
+    },
+    {
+      "name": "f4",
+      "value": "学到更多"
+    },
+    {
+      "name": "f5",
+      "value": "修理它"
+    },
+    {
+      "name": "b1",
+      "value": "一键横幅"
+    },
+    {
+      "name": "b2",
+      "value": "两个按钮横幅"
+    },
+    {
+      "name": "b3",
+      "value": "图片横幅"
+    }
+  ]
+}
